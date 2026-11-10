@@ -1,0 +1,241 @@
+/* Contact.css */
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.contact-header {
+  background: linear-gradient(180deg, #ffffff 0%, var(--bg-main) 100%);
+  padding: 50px 0 20px;
+  text-align: center;
+}
+
+.contact-header h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--secondary);
+  margin: 12px 0 8px;
+}
+
+.contact-header p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.contact-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-info-panel h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--secondary);
+}
+
+.panel-desc {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.info-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.info-card:hover {
+  border-color: var(--primary);
+  transform: translateX(4px);
+}
+
+.info-icon {
+  font-size: 1.8rem;
+  background: var(--primary-light);
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-card strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--secondary);
+  margin-bottom: 2px;
+}
+
+.info-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.contact-faq-box {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-top: 10px;
+}
+
+.contact-faq-box h3 {
+  font-size: 1.15rem;
+  color: var(--secondary);
+  margin-bottom: 16px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.faq-item {
+  border-bottom: 1px dashed var(--border-color);
+  padding-bottom: 12px;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.faq-item strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-bottom: 4px;
+}
+
+.faq-item p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Contact Form Panel */
+.contact-form-panel {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  box-shadow: var(--shadow-md);
+}
+
+.contact-form h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--secondary);
+}
+
+.form-sub {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 6px 0 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 6px;
+}
+
+.req {
+  color: var(--accent-red);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  background-color: var(--bg-main);
+  transition: var(--transition);
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.success-feedback {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.success-icon {
+  font-size: 3.5rem;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.success-feedback h2 {
+  font-size: 1.8rem;
+  color: var(--secondary);
+  margin-bottom: 12px;
+}
+
+.success-feedback p {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .contact-main-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

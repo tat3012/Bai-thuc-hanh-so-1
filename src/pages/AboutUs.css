@@ -1,0 +1,234 @@
+/* AboutUs.css */
+.about-page {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.about-hero {
+  background: linear-gradient(180deg, #ffffff 0%, var(--bg-main) 100%);
+  padding: 60px 0 30px;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--secondary);
+  margin: 16px 0;
+  letter-spacing: -0.5px;
+}
+
+.about-hero-sub {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Mission Section */
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.mission-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.mission-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.mission-icon {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.mission-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 12px;
+}
+
+.mission-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Stats Section */
+.stats-section {
+  background: #0f172a;
+  padding: 48px 0;
+  color: #ffffff;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat-number {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #38bdf8;
+}
+
+.stat-title {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+/* Timeline */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.timeline-item {
+  background: #ffffff;
+  border-left: 4px solid var(--primary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 24px 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.timeline-year {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.timeline-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 8px;
+}
+
+.timeline-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.team-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.team-avatar-box {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.team-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.team-card:hover .team-avatar {
+  transform: scale(1.05);
+}
+
+.team-info {
+  padding: 24px;
+}
+
+.team-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.team-role {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin: 4px 0 12px;
+}
+
+.team-bio {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* About CTA */
+.about-cta-card {
+  background: linear-gradient(135deg, var(--primary) 0%, #1e40af 100%);
+  border-radius: var(--radius-lg);
+  padding: 48px 32px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about-cta-card h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.about-cta-card p {
+  font-size: 1rem;
+  color: #dbeafe;
+  max-width: 600px;
+  margin: 0 auto 28px;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+}
